@@ -503,6 +503,7 @@ export default function App() {
   };
 
   const handleThemeChange = (nextTheme) => {
+    if (nextTheme === themeId) return;
     setThemeId(nextTheme);
     setDirty(true);
   };
